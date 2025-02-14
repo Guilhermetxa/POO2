@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula2
+{
+    internal class Program  
+    {
+        static void Main(string[] args)
+        {
+            List<string> list2 = new List<string>();
+            list2.Add("Guilherme");
+            list2.Add("txa");
+
+            List<string> list = new List<string>()
+            {
+                "Guilherme1",
+                "txa1"
+            };
+
+            list.ForEach(x =>
+            {
+                Console.WriteLine(x);
+            });
+        }
+    }
+}
